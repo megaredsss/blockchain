@@ -7,9 +7,7 @@ import (
 	"strconv"
 )
 
-type Block struct {
-	models.Block
-}
+type Block struct{ models.Block }
 
 func (b *Block) SetHash() {
 	timestamp := []byte(strconv.FormatInt(b.Timestamp, 10))
