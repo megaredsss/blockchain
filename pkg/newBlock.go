@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// Create newblock
 func NewBlock(data string, prevBlockHash []byte) *Block {
 	block := &Block{models.Block{
 		Timestamp:     time.Now().Unix(),
