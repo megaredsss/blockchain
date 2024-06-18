@@ -9,6 +9,7 @@ import (
 
 type Block struct{ models.Block }
 
+// creating hash with "crypto/sha256"
 func (b *Block) SetHash() {
 	timestamp := []byte(strconv.FormatInt(b.Timestamp, 10))
 	headers := bytes.Join([][]byte{b.PrevBlockHash, b.Data, timestamp}, []byte{})

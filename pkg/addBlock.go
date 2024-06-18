@@ -1,5 +1,6 @@
 package pkg
 
+// need to refactor
 type Blockchain struct{ Blocks []*Block }
 
 func (bc *Blockchain) AddBlock(data string) {
